@@ -1,0 +1,128 @@
+*{
+    max-resolution: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./assets/final-img.jpg");
+}
+
+.box{
+    width: 900px;
+    height: 550px;
+    background-color: rgb(223, 221, 219);
+    border-radius: 20px;
+
+}
+
+.list{
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+padding-inline: 30px;
+}
+
+.list ul li{
+    color: black;
+    padding-left: 20px;
+}
+
+.list ul{
+    list-style: none;
+    display: flex;
+}
+.list ul li button{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+#black{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+
+}
+
+.grid-container{
+    width: auto;
+    height: auto;
+    padding: 30px;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 400px 200px 200px;
+}
+
+.tab{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.tab:first-child{
+    background-image: url("./assets/App_11.jpg");
+    background-position: top;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.tab:nth-child(2){
+    background-image: url("./assets/grid-2.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.tab:nth-child(3){
+    /* background-image: url("./assets/grid-3.webp"); */
+    background-color: rgb(203, 161, 243);
+    background-position: left;
+    background-size: cover;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.tab:nth-child(4){
+    /* background-image: url("./assets/grid-4.avif"); */
+    background-color: yellowgreen;
+    background-position: center;
+    background-size: cover;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.text-one{
+   padding-left: 20px;
+}
+
+.text-one h4{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.text-one h5{
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+padding-top: 70px;
+}
